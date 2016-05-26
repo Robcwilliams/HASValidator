@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+    "name": "HAS Crew Validator",
+    "description": "Checks if there is a valid crew for HAS",
+    "version": "1.2",
+    "browser_action":{
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://*.com/*", "https://*.com/*"],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
