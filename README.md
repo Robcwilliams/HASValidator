@@ -1,2 +1,2 @@
 # HASValidator
-Ambulance crew validation for the online tool used for scheduling
+Google Chrome plugin used for ambulance crew validation with the online scheduling tool.
