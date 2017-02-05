@@ -108,6 +108,16 @@ for (var i = 0; i < elements.length; i++) {
                     {
                         element.style.backgroundColor = greenValue;
                     }
+                    //#7.1:    1x200 Driver, 1x700 EMT, 1x900 EMT
+                    else if((crewRes['Driver'] >= 1) && (crewRes['700 EMT'] >= 1) && (crewRes['900 EMT'] >= 1))
+                    {
+                        element.style.backgroundColor = greenValue;
+                    }
+                    //#7.2:    1x200 Driver, 1x700 EMT, 1x900 Driver
+                    else if((crewRes['Driver'] >= 1) && (crewRes['700 EMT'] >= 1) && (crewRes['900Driver'] >= 1))
+                    {
+                        element.style.backgroundColor = greenValue;
+                    }
                     //#8:    1x200 Driver, 1x900 Driver, 1x300N
                     else if((crewRes['Driver'] >= 1) && (crewRes['900Driver'] >= 1) && (crewRes['Prov'] >= 1))
                     {
